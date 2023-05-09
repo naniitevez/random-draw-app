@@ -1,5 +1,5 @@
 import MainLayout from "@/components/MainLayout";
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 

@@ -1,0 +1,44 @@
+@import "./index.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  background: $main-color;
+
+  & .header_container {
+    width: 100%;
+    margin: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+
+    & button.user_icon_container {
+      background: transparent;
+      border: none;
+      width: fit-content;
+      padding: 5px;
+      @include flex-center;
+
+      & .users {
+        margin-left: 5px;
+      }
+    }
+
+    & .icon_buttons_container {
+      @include flex-center;
+
+      & > button {
+        background: transparent;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        padding: 5px;
+        margin-left: 15px;
+        border: none;
+        box-shadow: 9px 6px 10px 0px rgba(0,0,0,0.2);
+        @include flex-center;
+      }
+    }
+  }
+}
